@@ -39,12 +39,12 @@ export const login = async (req, res) => {
   if (!user) return res.status(400).send("Invalid email");
 
   const validPassWord = await bcrypt.compare(req.body.password, user.password);
-  if(!validPassWord) return res.status(400).send("Invalid password")
+  if(!validPassWord) return res.status(400).json({ mess: "Invalid password"})
 
   const token = generateAccessToken({ _id: user._id})
   const refreshToken = JWT.sign({ _id: user._id}, process.env.REFRESH_TOKEN_SECRET);
   refreshTokens.push(refreshToken)
-  res.status(200).json({ message: "Login successfully", accessToken: token, refreshToken: refreshToken})
+  res.status(200).json({ message: "Login successfully", accessToken: token, refreshToken: refreshToken, user})
 
 };
 
