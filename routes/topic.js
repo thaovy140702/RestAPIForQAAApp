@@ -1,6 +1,6 @@
 import express from 'express'
 import upload from '../middleware/multer'
-import { addTopic, deleteTopic, getAllTopic, updateTopic } from '../controllers/topicControllers.js';
+import { addTopic, deleteTopic, getAllTopic, updateTopic } from '../controllers/topicControllers';
 const router = express.Router();
 
 router.get("/getalltopic", getAllTopic)

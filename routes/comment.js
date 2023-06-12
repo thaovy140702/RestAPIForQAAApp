@@ -1,5 +1,5 @@
 import express from 'express'
-import { addComment, deleteComment, getAllCommentByPost, getAllCommentByUser, updateComment } from '../controllers/commentController.js';
+import { addComment, deleteComment, getAllCommentByPost, getAllCommentByUser, updateComment } from '../controllers/commentController';
 const router = express.Router();
 
 router.get("/getbypost/:id", getAllCommentByPost)

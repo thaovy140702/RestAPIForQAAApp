@@ -1,7 +1,7 @@
 // add comment
-import Blog from "../models/Blog.js";
-import User from "../models/User.js";
-import Comment from "../models/Comment.js";
+import Blog from "../models/Blog";
+import User from "../models/User";
+import Comment from "../models/Comment";
 
 // add comment
 export const addComment = async (req, res) => {

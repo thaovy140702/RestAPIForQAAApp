@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import cloudinary from "../middleware/cloudinary";
-import Topic from "../models/Topic.js";
+import Topic from "../models/Topic";
 
 // get topic
 export const getAllTopic = async (req, res) => {

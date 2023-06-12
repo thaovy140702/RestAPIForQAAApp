@@ -1,7 +1,7 @@
-import User from "../models/User.js";
+import User from "../models/User";
 import bcrypt from "bcrypt";
 import cloudinary from "../middleware/cloudinary";
-import { passwordValidation } from "../validation.js";
+import { passwordValidation } from "../validation";
 
 // get all users
 export const getAllUser = async (req, res) => {

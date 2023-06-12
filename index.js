@@ -3,11 +3,11 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import helmet from "helmet";
 import morgan from "morgan";
-import userRouter from "./routes/user.js";
-import authRouter from './routes/auth.js'
-import postRouter from './routes/blog.js'
-import commentRouter from './routes/comment.js'
-import topicRouter from './routes/topic.js'
+import userRouter from "./routes/user";
+import authRouter from './routes/auth'
+import postRouter from './routes/blog'
+import commentRouter from './routes/comment'
+import topicRouter from './routes/topic'
 
 dotenv.config();
 
