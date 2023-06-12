@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
-import Blog from "../models/Blog";
-import User from "../models/User";
+import Blog from "../models/Blog.js";
+import User from "../models/User.js";
 import cloudinary from "../middleware/cloudinary";
-import Comment from "../models/Comment";
+import Comment from "../models/Comment.js";
 
 export const getAllBlogs = async (req, res) => {
   let blogs;

@@ -1,5 +1,5 @@
 import bcrypt from "bcrypt";
-import User from "../models/User";
+import User from "../models/User.js";
 import { loginValidation, registerValidation } from "../validation";
 import JWT from "jsonwebtoken"
 

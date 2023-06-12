@@ -1,5 +1,5 @@
 import express from 'express'
-import { addBlogs, deletePost, getAllBlogs, getBlogByUserId, getPost, getPostByFollowing, getPostByTopic, likePost, updatePost } from '../controllers/blogController';
+import { addBlogs, deletePost, getAllBlogs, getBlogByUserId, getPost, getPostByFollowing, getPostByTopic, likePost, updatePost } from '../controllers/blogController.js';
 import upload from '../middleware/multer'
 const router = express.Router();
 

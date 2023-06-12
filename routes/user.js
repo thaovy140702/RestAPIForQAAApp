@@ -1,6 +1,5 @@
 import express from 'express'
-import { changePassword, deleteUser, followUser, getAllUser, getUser, unfollowUser, updateUser } from '../controllers/userController';
-import verify from '../middleware/authMiddleware'
+import { changePassword, deleteUser, followUser, getAllUser, getUser, unfollowUser, updateUser } from '../controllers/userController.js';
 import upload from '../middleware/multer'
 
 const router = express.Router();

@@ -1,7 +1,6 @@
 import express from 'express'
-import { addBlogs, deletePost, getAllBlogs, getBlogByUserId, getPost, getPostByFollowing, likePost, updatePost } from '../controllers/blogController';
 import upload from '../middleware/multer'
-import { addTopic, deleteTopic, getAllTopic, updateTopic } from '../controllers/topicControllers';
+import { addTopic, deleteTopic, getAllTopic, updateTopic } from '../controllers/topicControllers.js';
 const router = express.Router();
 
 router.get("/getalltopic", getAllTopic)

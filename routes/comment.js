@@ -1,7 +1,5 @@
 import express from 'express'
-import verify from '../middleware/authMiddleware'
-import upload from '../middleware/multer'
-import { addComment, deleteComment, getAllCommentByPost, getAllCommentByUser, updateComment } from '../controllers/commentController';
+import { addComment, deleteComment, getAllCommentByPost, getAllCommentByUser, updateComment } from '../controllers/commentController.js';
 const router = express.Router();
 
 router.get("/getbypost/:id", getAllCommentByPost)
